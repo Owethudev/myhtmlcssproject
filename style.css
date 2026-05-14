@@ -36,7 +36,7 @@ body {
 }
 
 .brandlink img {
-    width: 40px; /* Smaller logo for mobile */
+    width: 80px; /* Smaller logo for mobile */
     height: auto;
 }
 
