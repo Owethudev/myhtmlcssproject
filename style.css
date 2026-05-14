@@ -61,7 +61,7 @@ body {
 
 /* Create space for fixed navbar */
 main {
-    padding: 30px; /* Top padding to prevent content from being hidden behind the fixed navbar */
+    padding: 39px; /* Top padding to prevent content from being hidden behind the fixed navbar */
 }
 
 .main {
