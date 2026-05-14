@@ -30,7 +30,7 @@ body {
 }
 
 .logo {
-    width: 45px;
+    width: 250px;
     height: auto;
 }
 
@@ -177,7 +177,7 @@ main {
     }
 
     .logo {
-        width: 45px; /* Original logo size */
+        width: 80px; /* Original logo size */
     }
 
     .navbar nav ul {
