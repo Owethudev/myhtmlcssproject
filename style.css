@@ -14,8 +14,8 @@ body {
     width: 100%;
     background-color: #f78d01;
     display: flex;
-    justify-content: space-between;
-    padding: 2%;
+    justify-content: space-around; /* Even distribution for tight fit */
+    padding: 1%; /* Minimal padding for mobile */
     align-items: center;
     box-sizing: border-box;
 }
@@ -141,72 +141,50 @@ main {
     line-height: 1.6;
 }
 
-/* Mobile phone , this is for mobile devices and tells the browser to display the content in a column */
-@media (max-width: 375px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
 
-  .navbar nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-/* For the main content, we switch to a single column layout and adjust padding for better spacing on smaller screens. */
-  .main {
-    padding: 1.5rem 1rem;
-    grid-template-columns: 1fr;
-  }
-
-  .maincopy {
-    min-height: 220px;
-  }
-
-  .imagegallery {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-  }
-
-  .gallerycard img {
-    height: 180px;
-  }
-}
-
-/* Tablet this is for tablet devices and tells the browser to display the content in a column */
+/* Tablet adjustments (376px to 768px) */
 @media (min-width: 376px) and (max-width: 768px) {
-  .navbar {
-    padding: 1rem 1.25rem;
-  }
+    .navbar {
+        padding: 1.5%; /* Slightly more padding */
+        justify-content: space-between; /* Back to original spacing */
+    }
 
-  .navbar nav ul {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-/* For the main content, we switch to a single column layout and adjust padding for better spacing on smaller screens. */
-  .main {
-    grid-template-columns: 1fr;
-    padding: 2rem 1.25rem;
-  }
-/* For the image gallery, we switch to a two-column layout to better utilize the available space on tablets. */
-  .imagegallery {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 1.25rem;
-  }
+    .brandlink h2 {
+        font-size: 1.2rem; /* Larger brand text */
+    }
+
+    .logo {
+        width: 40px; /* Medium logo size */
+    }
+
+    .navbar nav ul {
+        gap: 1rem; /* Moderate gap */
+    }
+
+    .navbar nav a {
+        font-size: 1rem; /* Standard nav font */
+    }
 }
 
-/* Desktop , this is for desktop devices and tells the browser to display the content in a column */
+/* Desktop adjustments (1024px and above) */
 @media (min-width: 1024px) {
-  .main {
-    grid-template-columns: 1.4fr 1fr;
-    gap: 2.5rem;
-  }
+    .navbar {
+        padding: 2%; /* Full padding */
+    }
 
-  .imagegallery {
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
-  }
+    .brandlink h2 {
+        font-size: 1.5rem; /* Larger brand text */
+    }
 
-  .maincopy {
-    max-width: 560px;
-  }
+    .logo {
+        width: 45px; /* Original logo size */
+    }
+
+    .navbar nav ul {
+        gap: 1.5rem; /* Original gap */
+    }
+
+    .navbar nav a {
+        font-size: 1.1rem; /* Slightly larger nav font */
+    }
 }
