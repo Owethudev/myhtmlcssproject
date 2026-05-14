@@ -1,4 +1,4 @@
-/* The main styles */
+/* The main styles and eveything in the body*/
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
@@ -6,7 +6,7 @@ body {
     color: #373736;
 }
 
-/* Navbar styles */
+/* Navbar styling and positioning when fixed (we set the top and left to zero so it sticks to the edges) */
 .navbar {
     position: fixed;
     top: 0;
@@ -141,7 +141,7 @@ main {
     line-height: 1.6;
 }
 
-/* Mobile phone */
+/* Mobile phone , this is for mobile devices and tells the browser to display the content in a column */
 @media (max-width: 375px) {
   .navbar {
     flex-direction: column;
@@ -153,7 +153,7 @@ main {
     flex-direction: column;
     gap: 0.75rem;
   }
-
+/* For the main content, we switch to a single column layout and adjust padding for better spacing on smaller screens. */
   .main {
     padding: 1.5rem 1rem;
     grid-template-columns: 1fr;
@@ -173,7 +173,7 @@ main {
   }
 }
 
-/* Tablet */
+/* Tablet this is for tablet devices and tells the browser to display the content in a column */
 @media (min-width: 376px) and (max-width: 768px) {
   .navbar {
     padding: 1rem 1.25rem;
@@ -183,19 +183,19 @@ main {
     flex-wrap: wrap;
     gap: 1rem;
   }
-
+/* For the main content, we switch to a single column layout and adjust padding for better spacing on smaller screens. */
   .main {
     grid-template-columns: 1fr;
     padding: 2rem 1.25rem;
   }
-
+/* For the image gallery, we switch to a two-column layout to better utilize the available space on tablets. */
   .imagegallery {
     grid-template-columns: 1fr 1fr;
     padding: 0 1.25rem;
   }
 }
 
-/* Desktop */
+/* Desktop , this is for desktop devices and tells the browser to display the content in a column */
 @media (min-width: 1024px) {
   .main {
     grid-template-columns: 1.4fr 1fr;
