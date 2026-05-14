@@ -35,6 +35,11 @@ body {
     font-weight: 700;
 }
 
+.brandlink img {
+    width: 40px; /* Smaller logo for mobile */
+    height: auto;
+}
+
 .logo {
     width: 250px;
     height: auto;
