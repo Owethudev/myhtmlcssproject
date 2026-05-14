@@ -20,8 +20,8 @@ body {
     width: 100%;
     background-color: #f78d01;
     display: flex;
-    justify-content: space-around; /* Even distribution for tight fit */
-    padding: 1%; /* Minimal padding for mobile */
+    justify-content: space-between; /* Even distribution for tight fit */
+    padding: 16px 32px; /* Minimal padding for mobile */
     align-items: center;
     box-sizing: border-box;
 }
@@ -151,7 +151,7 @@ main {
 /* Tablet adjustments (376px to 768px) */
 @media (min-width: 376px) and (max-width: 768px) {
     .navbar {
-        padding: 1.5%; /* Slightly more padding */
+        padding: 16px 32px; /* Slightly more padding */
         justify-content: space-between; /* Back to original spacing */
     }
 
@@ -174,6 +174,9 @@ main {
 
 /* Desktop adjustments (1024px and above) */
 @media (min-width: 1024px) {
+    main {
+    padding: 100px; /* Top padding to prevent content from being hidden behind the fixed navbar */
+    }
     .navbar {
         padding: 2%; /* Full padding */
     }
