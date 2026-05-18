@@ -1,10 +1,12 @@
+/* This is the CSS file for my website ,my first selector is universal and targets everything on the page. I added border-box to the box-sizing property as I just learned it from the course content*/
+/* I added margin and padding to zero to remove the default spacing that browsers add to elements, this gives me a clean slate to work with and allows me to control the spacing of my elements better. */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* The main styles and eveything in the body*/
+/* The main styles and eveything in the body of my website pages*/
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
@@ -12,7 +14,7 @@ body {
     color: #373736;
 }
 
-/* Navbar styling and positioning when fixed (we set the top and left to zero so it sticks to the edges) */
+/* Navbar styling and positioning I made it fixed so its always easy to navigate for users.when fixed (we set the top and left to zero so it sticks to the edges) */
 .navbar {
     position: fixed;
     top: 0;
@@ -26,6 +28,7 @@ body {
     box-sizing: border-box;
 }
 
+/* The brand link is the logo and the name of the coffee shop */
 .brandlink {
     display: flex;
     align-items: center;
@@ -35,16 +38,13 @@ body {
     font-weight: 700;
 }
 
-.brandlink img {
-    width: 65px; /* Smaller logo for mobile */
-    height: auto;
-}
-
+/* my logo sizing and styling */
 .logo {
     width: 250px;
     height: auto;
 }
 
+/* The navigation links styling and space between them */
 .navbar nav ul {
     list-style: none;
     display: flex;
@@ -52,18 +52,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
+ /* styling for the links in my navbar */
 .navbar nav a {
     text-decoration: none;
     color: #373736;
     font-weight: 600;
 }
 
-/* Create space for fixed navbar */
+/* this creates space on top for the main content because of the fixed navbar */
 main {
     padding: 39px; /* Top padding to prevent content from being hidden behind the fixed navbar */
 }
 
+/* the main content of the page and images of the shop styling */
 .main {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -78,6 +79,7 @@ main {
     max-width: 540px;
 }
 
+/* the heading styling for the main content of the pages */
 .heading{
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -86,39 +88,27 @@ main {
     font-size: 0.85rem;
 }
 
+/* the main heading styling for the main content of the pages ,what the clamp feauture does it allows your fontsize to change depending on your viewport width ,(min,preferred,max)*/
 .main h1 {
     font-size: clamp(2rem, 3vw, 3.5rem);
     margin: 0 0 1rem;
     line-height: 1.05;
 }
 
+/* the paragraph styling for the main content of the pages */
 .main p {
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
 }
-
-.button {
-    display: inline-block;
-    background-color: #373736;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.95rem 1.5rem;
-    border-radius: 35px;
-    font-weight: 700;
-}
-
+ 
+/*link styling for the main content of the pages */
 .imagegallery a{
     text-decoration: none;
     color: #373736;
 }
-.mainimage {
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    min-height: 320px;
-}
 
+/* theis is for anywhere there is any images or group of images on my pages for example the menu and home page */
 .imagegallery {
     display: flex;
     flex-wrap: wrap;
@@ -127,7 +117,8 @@ main {
     margin: 0 auto 3rem;
     padding: 0 1.5rem;
 }
-
+ 
+/* the styling for the cards that have the images and text on the menu and home page */
 .gallerycard {
     background: #ffffff;
     border-radius: 18px;
@@ -135,6 +126,7 @@ main {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
+/*styling for the images inside the cards on the pages*/
 .gallerycard img {
     width: 100%;
     display: block;
@@ -142,6 +134,7 @@ main {
     height: 220px;
 }
 
+/*styling for the writing inside the cards on the pages*/
 .gallerycard h2 {
     font-size: 1.25rem;
     margin: 1rem;
@@ -152,6 +145,7 @@ main {
     line-height: 1.6;
 }
 
+/*these are the media queries for the responsiveness of the website.I have three breakpoints for mobile, tablet and desktop according to the specifications on the project brief */
 
 /* Tablet adjustments (376px to 768px) */
 @media (min-width: 376px) and (max-width: 768px) {
