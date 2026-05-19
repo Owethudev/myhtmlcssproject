@@ -28,11 +28,13 @@ A simple, responsive website for The Daily Bean coffee shop, built with HTML and
    cd myhtmlcssproject
    ```
 
-3. Open `home.html` in your web browser to view the site.
+3. Open `home.html` in your web browser to view the site, or visit the live site:
+   https://owethujezileproject.netlify.app
 
 ## Usage
 
-Simply open any of the HTML files (`home.html`, `about.html`, `services.html`, `contact.html`) in a modern web browser to view the website. No server setup is required as this is a static site.
+Open any of the HTML files (`home.html`, `about.html`, `services.html`, `contact.html`) in a modern web browser to view the website. You can also access the live site directly at:
+https://owethujezileproject.netlify.app
 
 ## Project Structure
 
@@ -44,21 +46,21 @@ myhtmlcssproject/
 ├── contact.html       # Contact page
 ├── style.css          # Main stylesheet
 ├── images/            # Image assets
+│   ├── A quiet coffee shop courtyard tucked inside a city….jpg
 │   ├── Gemini_Generated_Image_24qc9n24qc9n24qc.png
 │   ├── coffee_store_logo.svg
 │   ├── im5.jpeg
-│   ├── img3.jpeg
-│   └── img4.jpeg
+│   ├── img4.jpeg
+│   └── prodcutlist/
+│       ├── Gemini_Generated_Image_1i9h9y1i9h9y1i9h.png
+│       ├── Gemini_Generated_Image_5idzp55idzp55idz.png
+│       └── Gemini_Generated_Image_h9kb94h9kb94h9kb.png
 └── README.md          # This file
 ```
 
 ## Contributing
 
 This is a personal project for learning HTML and CSS. Feel free to fork and modify for your own use.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 Owethu Jezile
